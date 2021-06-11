@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { makeStyles } from '@material-ui/core'
 import { Chat } from './components/Chat'
 
@@ -13,8 +13,10 @@ export const App = () => {
   const classes = useStyles()
 
   return (
-    <div className={classes.root}>
-      <Chat />
-    </div>
+    <>
+      <div className={classes.root}>
+        <Chat />
+      </div>
+    </>
   )
 }
